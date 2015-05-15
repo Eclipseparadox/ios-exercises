@@ -27,6 +27,8 @@
  **/
 - (NSInteger) increaseNumberBy1:(NSInteger) number;
 
+- (NSInteger) increaseNumberBy10:(NSInteger) number;
+
 /**
  Adds two numbers together.
  

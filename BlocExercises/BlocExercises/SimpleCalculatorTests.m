@@ -35,6 +35,16 @@
     XCTAssertTrue(resultNumber == 973, @"972 + 1 = 973");
 }
 
+- (void) testThatIncrementBy10Works {
+    NSInteger sourceNumber = 17;
+    NSInteger resultNumber = [self.calculator increaseNumberBy10:sourceNumber];
+    XCTAssertTrue(resultNumber == 27, @"17 + 10 = 27");
+    
+    sourceNumber = 972;
+    resultNumber = [self.calculator increaseNumberBy10:sourceNumber];
+    XCTAssertTrue(resultNumber == 982, @"972 + 10 = 982");
+}
+
 - (void) testThatAdditionWorks {
     NSInteger firstOperand = 17;
     NSInteger secondOperand = 3;
